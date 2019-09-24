@@ -1,3 +1,5 @@
+/* ------------------- Basic Setup -------------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -15,12 +17,18 @@ body {
 
 .row {
     max-width: 1140px;
-    margin: 0 auto;
+    margin: 0 auto; /* to make content centered */
 }
 
+/* ------------------- Header -------------------*/
+
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)),url(/resources/img/hero.jpg);
-    background-size: cover; 
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.705),
+            rgba(0, 0, 0, 0.705)
+        ),
+        url(/resources/img/hero.jpg);
+    background-size: cover;
     background-position: center;
     height: 100vh; /* to get full view height of the image   */
 }
@@ -41,8 +49,10 @@ header {
     text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 4px;
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
 }
+
+/* ------------------- Buttons -------------------*/
 
 .btn:link,
 .btn:visited {
@@ -51,7 +61,7 @@ header {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
-    /* border: #e67e22; */
+    transition: background-color 0.2s border 0.2s color 0.2s;
 }
 
 .btn-full:link,
@@ -59,7 +69,7 @@ header {
     color: #ffffff;
     background-color: #e67e22;
     border: 1px solid #e67e22;
-    /* margin-right: 10px; */
+    margin-right: 25px;
 }
 
 .btn-ghost:link,
@@ -83,3 +93,53 @@ header {
     color: #ffffff;
     border: 1px solid #cf6d17;
 }
+
+/* ------------------- Logo -------------------*/
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+/* ------------------- Navigation -------------------*/
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%; /* 20 px / 18 px = .9 */
+    border-bottom: 1px solid transparent;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s;
+}
+
+
+/* ------------------- Section01 -------------------*/
+/* ------------------- -------------------*/
+
+section {
+    padding: 80px 0;
+}
+
+
